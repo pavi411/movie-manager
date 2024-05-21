@@ -1,0 +1,47 @@
+.scrollable-div {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.left-scrollbar, .right-scrollbar {
+  position: absolute;
+  color: white;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 3em;
+  background-color: #000000aa;
+  border: 2px solid #28a745;
+}
+
+.left-scrollbar:focus, .right-scrollbar:focus {
+  outline: 0;
+}
+
+.left-scrollbar {
+  left: 0;
+  border-right: 0;
+  box-shadow: 5px 0 5px black;
+}
+
+.right-scrollbar {
+  right: 0;
+  border-left: 0;
+  box-shadow: -5px 0 5px black;
+}
+
+.scroll-items {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-items::-webkit-scrollbar { height: 0 !important }
+
+.hidden {
+	display: none;
+}

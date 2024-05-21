@@ -1,0 +1,164 @@
+.cursor-pointer {
+  cursor: pointer!important;
+}
+.vote-button:focus {
+  box-shadow: 0 0 0 0;
+}
+.border-danger {
+  border-width: 2px!important;
+  box-shadow: 0 0 0 0.1rem #dc354544!important;
+}
+.border-danger:focus {
+  box-shadow: 0 0 0 0.2rem #dc354544!important;
+}
+body {
+  background-color: #343a40;
+  color: #fff;
+}
+.input-group.border-success {
+  border-width: 2px!important;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0!important;
+}
+
+#search-form {
+  color: rgba(255,255,255,.5);
+}
+
+#search-input:focus-within {
+  box-shadow: 0 0 0.1rem 0.08rem #28a745!important;
+}
+
+#advanced-search {
+  visibility: hidden;
+  height: 0;
+}
+
+#advanced-search.show {
+  visibility: visible;
+  height: 100%;
+  animation: fadeIn 0.5s;
+}
+
+.item-wrapper {
+  position: relative;
+  width: auto;
+}
+
+.poster-image {
+  display: block;
+  max-height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+  box-shadow: 0 0 0.2rem 0.1rem gray;
+}
+
+.poster-hover {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  position: absolute;
+  background-color: #000000aa;
+  visibility: hidden;
+  padding: 8px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.poster-image:hover + .poster-hover, .poster-hover:hover {
+  visibility: visible;
+}
+
+.item-title, .item-description, .item-release, .item-genre {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-title {
+  display: inline-flex;
+  font-size: 1.2em;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-description {
+  display: inline-block;
+  height: 50%;
+}
+
+.item-release {
+
+}
+
+.item-genre {
+  white-space: nowrap;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+
+}
+
+.fas.fa-star {
+  color: gold!important;
+}
+
+#rating-toggler:hover {
+  cursor: pointer;
+}
+
+#notification-list {
+  position: fixed;
+  z-index: 9999;
+  top: 24px;
+  right: 24px;
+}
+
+@media only screen and (max-width: 576px) {
+  #notification-list {
+    left: 24px;
+  }
+}
+
+.notification {
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+#notif-number {
+  position: absolute;
+  background: transparent;
+  font-size: 0.9em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loginModal, #registerModal {
+  z-index: 100001;
+}
